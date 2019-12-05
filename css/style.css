@@ -26,6 +26,21 @@ body {
   vertical-align: text-top;
 }
 
+.line_star {
+  font-size: 40px;
+  line-height: 40px;
+}
+.line_star:before,
+.line_star:after {
+  content: '';
+  display: inline-block;
+  width: 20%;
+  height: 4px;
+  margin: 0 20px;
+  border-radius: 4px;
+  background: white;
+  vertical-align: middle;
+}
 /* header */
 .header_top {
   position: fixed;
@@ -68,7 +83,12 @@ body {
 .jumbo_text {
   width: 60%;
   margin: 0 auto;
+  color: white;
 }
+.jumbo_text img {
+  width: 250px;
+}
+
 
 /* Portfolio */
 .box_portfolio {
@@ -96,6 +116,13 @@ body {
   .header_top .logo {
     font-size: 20px;
   }
+  .jumbo_text h1 {
+    font-size: 34px;
+    font-weight: bold;
+  }
+  .jumbo_text h2 {
+    font-size: 18px;
+  }
 }
 @media screen and (min-width: 768px) {
   .wrapper_md_60 {
@@ -104,5 +131,22 @@ body {
   }
   .header_top .logo {
     font-size: 20px;
+  }
+  .jumbo_text h1 {
+    font-size: 34px;
+    font-weight: bold;
+  }
+  .jumbo_text h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .jumbo_text h1 {
+    font-size: 54px;
+    font-weight: bold;
+  }
+  .jumbo_text h2 {
+    font-size: 22px;
   }
 }
